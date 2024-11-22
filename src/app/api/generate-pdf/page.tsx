@@ -9,7 +9,7 @@ export default async function GeneratePdf() {
 
     await page.goto('http://ricardoabicalhob.github.io/safety-inspection-report/inscritos')
 
-    const downloadsPath = os.homedir() + '\\Downloads'
+    const downloadsPath = os.homedir() + '/Downloads'
 
     const pdfPath = path.join(downloadsPath, 'meu-pdf.pdf')
 
