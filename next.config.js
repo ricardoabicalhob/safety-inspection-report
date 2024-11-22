@@ -10,7 +10,7 @@
 // @ts-check
 /**@type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  //output: 'export',
   basePath: process.env.NODE_ENV === 'production' ? '/inspecoesdeseguranca' : ''
 }
 
