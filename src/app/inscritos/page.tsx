@@ -54,9 +54,8 @@ export default function Inscritos() {
                     </CardContent>
                     
                     }
-                    <CardFooter id="rodape">
-                        <Button onClick={()=>generatePdf()}>Preparar relatório</Button>
-                        <a href="https://www.google.com">Baixar pdf</a>
+                    <CardFooter>
+                        
                     </CardFooter>
             </Card>
     )
