@@ -21,7 +21,7 @@ export default function Inscritos() {
             
             <Card className="max-w-[960px]">
                 <CardHeader className="grid grid-flow-row grid-cols-3 items-center bg-slate-200">
-                    <Image alt="" src={require('../../lib/images/logo-cipa-2.png')} width={100} height={100}/>
+                    {/* <Image alt="" src={require('../../lib/images/logo-cipa-2.png')} width={100} height={100}/> */}
                     <CardTitle className="text-xl text-center">RELATÓRIO DE INSPEÇÃO DE SEGURANÇA DO TRABALHO</CardTitle>
                 </CardHeader>
                 {
@@ -34,22 +34,20 @@ export default function Inscritos() {
                         <p className="font-bold">Fotos</p>
 
                         <div className="flex flex-row items-center justify-center flex-wrap p-6 gap-3 border-2 rounded-md">
-                            <Image alt="" src={require('../../lib/images/Barata.jpg')} width={260} height={195}/>
-                            <Image alt="" src={require('../../lib/images/Proliferacao-de-Baratas_-diga-adeus-a-infestacao-com-a-metodologia-certa-01.jpeg')} width={260} height={195}/>
-                            <Image alt="" src={require('../../lib/images/Barata.jpg')} width={260} height={195}/>
+                            
                         </div>
 
                         <p className="font-bold">Principais consequências</p>
                         {
-                            content.consequencias.map((consequencia)=>(
-                                <p>{consequencia}</p>
+                            content.consequencias.map((consequencia, index)=>(
+                                <p key={index}>{consequencia}</p>
                             ))
                         }
 
                         <p className="font-bold">Ações recomendadas</p>
                         {
-                            content.acoes.map((acao)=>(
-                                <p>{acao}</p>
+                            content.acoes.map((acao, index)=>(
+                                <p key={index}>{acao}</p>
                             ))
                         }
                     </CardContent>
