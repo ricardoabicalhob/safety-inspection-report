@@ -1,4 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+'use client'
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 type RiskProps = {
     risco :string
@@ -15,6 +17,7 @@ export default function Inscritos() {
         acoes: ['Sinalização imediata do buraco', 'Fechamento do buraco'],
         images: []
     }
+
 
     return (
             
@@ -49,7 +52,12 @@ export default function Inscritos() {
                             ))
                         }
                     </CardContent>
+                    
                     }
+                    <CardFooter id="rodape">
+                        <Button onClick={()=>generatePdf()}>Preparar relatório</Button>
+                        <a href="https://www.google.com">Baixar pdf</a>
+                    </CardFooter>
             </Card>
     )
 }
