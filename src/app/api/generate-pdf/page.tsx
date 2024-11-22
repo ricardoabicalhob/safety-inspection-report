@@ -5,7 +5,7 @@ export default async function GeneratePdf() {
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
 
-    await page.goto('http://https://github.com/ricardoabicalhob/safety-inspection-report/inscritos')
+    await page.goto('http://github.com/ricardoabicalhob/safety-inspection-report/inscritos')
 
     await page.pdf({
         path: './src/lib/meu-pdf.pdf',
