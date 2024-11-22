@@ -21,7 +21,6 @@ export default function Inscritos() {
             
             <Card className="max-w-[960px]">
                 <CardHeader className="grid grid-flow-row grid-cols-3 items-center bg-slate-200">
-                    {/* <Image alt="" src={require('../../lib/images/logo-cipa-2.png')} width={100} height={100}/> */}
                     <CardTitle className="text-xl text-center">RELATÓRIO DE INSPEÇÃO DE SEGURANÇA DO TRABALHO</CardTitle>
                 </CardHeader>
                 {
