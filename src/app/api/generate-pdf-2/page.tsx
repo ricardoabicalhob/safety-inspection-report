@@ -1,6 +1,7 @@
 import { NextApiResponse } from "next";
 import puppeteer from "puppeteer";
 
+// @ts-expect-error erro ja esperado
 export default async function GeneratePdf(req, res :NextApiResponse) {
         function uint8ArrayToBase64(array :Uint8Array) {
             // @ts-expect-error erro já previsto array
