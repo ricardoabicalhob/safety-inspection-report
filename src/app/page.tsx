@@ -16,7 +16,7 @@ export default function Home() {
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <Link href={'/api/generate-pdf-2'}>
-          Baixar o pdf
+          Baixar o relatório em PDF
         </Link>
       </footer>
     </div>
