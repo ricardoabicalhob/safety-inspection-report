@@ -1,7 +1,7 @@
-import puppeteer from 'puppeteer'
-import os from 'os'
-import path from 'path'
-import { redirect } from 'next/navigation'
+// import puppeteer from 'puppeteer'
+// import os from 'os'
+// import path from 'path'
+// import { redirect } from 'next/navigation'
 
 export default async function GeneratePdf() {
     // const browser = await puppeteer.launch()
@@ -25,7 +25,7 @@ export default async function GeneratePdf() {
     // redirect('/')
     return(
         <div>
-            
+
         </div>
     )
 }
