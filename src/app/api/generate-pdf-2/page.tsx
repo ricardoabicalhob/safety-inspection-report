@@ -5,7 +5,7 @@ import puppeteer from "puppeteer";
 
 export default async function GeneratePdf(req :NextApiRequest, res :NextApiResponse) {
         function uint8ArrayToBase64(array :Uint8Array) {
-            // @ts-expect-error
+            // @ts-expect-error erro já previsto array
             return btoa(String.fromCharCode.apply(null, array as any)); 
         }
 
