@@ -1,7 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiResponse } from "next";
 import puppeteer from "puppeteer";
 
-export async function GeneratePdf(req :NextApiRequest, res :NextApiResponse) {
+export default async function GeneratePdf(req, res :NextApiResponse) {
         function uint8ArrayToBase64(array :Uint8Array) {
             // @ts-expect-error erro já previsto array
             return btoa(String.fromCharCode.apply(null, array)); 
